@@ -300,7 +300,7 @@ with tab2:
             return ""
 
         styled = (df.style
-                  .applymap(style_shift, subset=DAYS)
+                  .map(style_shift, subset=DAYS)
                   .set_properties(**{"text-align":"center", "font-size":"13px",
                                      "padding":"6px 12px"})
                   .set_table_styles([
